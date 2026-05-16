@@ -1,26 +1,17 @@
-# Skills
+# Plobi Skills Domain Context
 
-A collection of agent skills (slash commands and behaviors) loaded by Claude Code. Skills are organized into buckets and consumed by per-repo configuration emitted by `/setup-matt-pocock-skills`.
+Unified language dictionary governing the Plobi surgical development environment.
 
 ## Language
 
-**Issue tracker**:
-The tool that hosts a repo's issues — GitHub Issues, Linear, a local `.scratch/` markdown convention, or similar. Skills like `to-issues`, `to-prd`, `triage`, and `qa` read from and write to it.
-_Avoid_: backlog manager, backlog backend, issue host
+**Baseline**:
+A pristine git commit state with zero uncommitted changes. The absolute, immutable starting point before surgery.
+_Avoid_: dirty tree, loose changes.
 
-**Issue**:
-A single tracked unit of work inside an **Issue tracker** — a bug, task, PRD, or slice produced by `to-issues`.
-_Avoid_: ticket (use only when quoting external systems that call them tickets)
+**Surgical Dissection**:
+The process of isolating a regression or defect by freezing a 2-second deterministic fail-to-pass feedback loop before executing implementation fixes.
+_Avoid_: loose debugging, vibe guessing.
 
-**Triage role**:
-A canonical state-machine label applied to an **Issue** during triage (e.g. `needs-triage`, `ready-for-afk`). Each role maps to a real label string in the **Issue tracker** via `docs/agents/triage-labels.md`.
-
-## Relationships
-
-- An **Issue tracker** holds many **Issues**
-- An **Issue** carries one **Triage role** at a time
-
-## Flagged ambiguities
-
-- "backlog" was previously used to mean both the *tool* hosting issues and the *body of work* inside it — resolved: the tool is the **Issue tracker**; "backlog" is no longer used as a domain term.
-- "backlog backend" / "backlog manager" — resolved: collapsed into **Issue tracker**.
+**Deep Fusion**:
+The architectural practice of collapsing scattered shallow components into high-leverage modules with minimal interface footprints to save cognitive load.
+_Avoid_: shallow abstraction, boilerplate pass-through.

@@ -1,14 +1,11 @@
-Skills are organized into bucket folders under `skills/`:
+# Plobi Skills Infrastructure
 
-- `engineering/` — daily code work
-- `productivity/` — daily non-code workflow tools
-- `misc/` — kept around but rarely used
-- `personal/` — tied to my own setup, not promoted
-- `in-progress/` — drafts not yet ready to ship
-- `deprecated/` — no longer used
+Skills are rigidly organized into 5 progressive lifecycle buckets under `skills/`:
 
-Every skill in `engineering/`, `productivity/`, or `misc/` must have a reference in the top-level `README.md` and an entry in `.claude-plugin/plugin.json`. Skills in `personal/`, `in-progress/`, and `deprecated/` must not appear in either.
+- `1-alignment/` — Strategic design, user grilling, and contract formalization.
+- `2-surgery/` — Brownfield retrofitting, bug dissection, and deep module fusion.
+- `3-defense/` — Test-driven freeze loops and destructive action guardrails.
+- `4-compression/` — Token economics and cross-session context packaging.
+- `5-infrastructure/` — Repository bootstrapping and new skill forging.
 
-Each skill entry in the top-level `README.md` must link the skill name to its `SKILL.md`.
-
-Each bucket folder has a `README.md` that lists every skill in the bucket with a one-line description, with the skill name linked to its `SKILL.md`.
+Every active skill must be assigned to exactly one of these folders. AI agents are strictly forbidden from creating top-level folders outside this taxonomy.
