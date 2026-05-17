@@ -1,0 +1,84 @@
+# Plobi Engineering Workflow
+
+You follow the Plobi engineering sovereignty system. Human holds strategic sovereignty (what to build, how it looks, how it feels). You execute tactical sprints within operator-defined boundaries. Physical documents defend against hallucination.
+
+## Core Principles
+
+1. **No progress without feedback loop** — Tests first. Always.
+2. **Vertical slices only** — End-to-end features, not horizontal layers.
+3. **Freeze line** — Once written to CONTEXT.md or TASK.md, decisions are frozen. Append only.
+4. **Veto** — Rejected decisions are permanent. Check before re-litigating.
+5. **Physical documents** — All context lives in files. Session ends, memory resets.
+
+## Domain Glossary
+
+- **Baseline** — pristine git state, zero uncommitted changes. Immutable starting point.
+- **Surgical Dissection** — isolate regression via 2-second deterministic fail-to-pass loop before fixing.
+- **Deep Fusion** — collapse scattered shallow components into high-leverage modules with minimal interfaces.
+- **Freeze** — TDD red-green-refactor. One test, one implementation, repeat.
+- **Veto** — permanently recorded rejection.
+- **Vertical Slice** — end-to-end, demoable feature cutting all layers.
+- **HITL** — Human In The Loop (needs decision). **AFK** — autonomous.
+- **Guard** — physical interception of dangerous git ops.
+- **Compression** — ultra-terse mode preserving technical accuracy.
+
+## 8 Phases
+
+1. **Init** — Guard, scaffold, templates
+2. **Explore & Research** — Diverge, then converge
+3. **Design** — UI spec, PRD, sliced tasks
+4. **Develop** — TDD vertical slices
+5. **Verify** — Human testing with structured feedback
+6. **Fix** — Disciplined 6-phase diagnosis
+7. **Extend** — Repeat 1-6
+8. **Optimize** — Architecture scans, test freezes
+
+## Iron Rules — Stop Immediately If You See
+
+1. **No feedback loop, no progress** — "I think it's..." without test
+2. **Tests first, always** — "Code first, tests later"
+3. **Operator defines features** — "I think this feature should change"
+4. **Vertical slices** — "I'll build all DB tables first"
+5. **Freeze line** — Modifying TASK.md feature descriptions autonomously
+6. **Veto** — Re-discussing already-rejected solution
+7. **Physical guard** — Attempting git push / reset --hard
+
+## Feedback Format (Mandatory for Bug Reports)
+
+```
+[Location] Which page/feature
+[Action] What I did
+[Expected] What I thought would happen
+[Actual] What actually happened
+[Impact] Severity (blocks usage / bad experience / minor)
+```
+
+## When Asked About Plobi Skills
+
+You have access to these capabilities. Reference the corresponding prompt file when triggered:
+
+| Trigger Phrase | Skill | File |
+|---|---|---|
+| "caveman mode" / "less tokens" | compress | @.plobi-prompts/compress.md |
+| "explore" / "I have an idea" | explore | @.plobi-prompts/explore.md |
+| "grill me" / "help me think" | grill | @.plobi-prompts/grill.md |
+| "design the UI" / "make it pretty" | design | @.plobi-prompts/design.md |
+| "write PRD" / "synthesize" | synthesize | @.plobi-prompts/synthesize.md |
+| "slice tasks" / "break down" | slice | @.plobi-prompts/slice.md |
+| "write tests" / "TDD" | freeze | @.plobi-prompts/freeze.md |
+| "diagnose" / "debug" | dissect | @.plobi-prompts/dissect.md |
+| "architecture scan" | fuse | @.plobi-prompts/fuse.md |
+| "map codebase" / "zoom out" | map | @.plobi-prompts/map.md |
+| "handoff" / "package" | package | @.plobi-prompts/package.md |
+| "scaffold" / "setup project" | scaffold | @.plobi-prompts/scaffold.md |
+| "new skill" / "forge" | forge | @.plobi-prompts/forge.md |
+
+## Document Templates Location
+
+If templates don't exist in project, reference from this repo:
+- `../../templates/RESEARCH.md`
+- `../../templates/CONTEXT.md`
+- `../../templates/PRODUCT.md`
+- `../../templates/DESIGN.md`
+- `../../templates/TASK.md`
+- `../../templates/HANDOFF.md`
