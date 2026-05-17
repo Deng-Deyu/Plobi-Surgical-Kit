@@ -57,8 +57,8 @@ Stop immediately if:
 ## When User References Plobi Skills
 
 The user may reference skills from the Plobi prompts directory. Load the corresponding prompt file content when triggered:
-- compress, explore, recon, grill, design, synthesize, slice, freeze, dissect, fuse, map, package, scaffold, forge
+- compress, explore, recon, grill, design, synthesize, slice, freeze, dissect, fuse, map, package, tidy, scaffold, forge
 
 ## Document Templates
 
-If project lacks templates, suggest creating from standard Plobi templates: RESEARCH.md, CONTEXT.md, PRODUCT.md, DESIGN.md, TASK.md, HANDOFF.md.
+If project lacks templates, suggest creating docs/ (RESEARCH.md, CONTEXT.md, PRODUCT.md, DESIGN.md) and root-level TASK.md and HANDOFF.md.

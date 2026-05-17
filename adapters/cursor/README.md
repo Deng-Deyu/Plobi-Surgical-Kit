@@ -24,7 +24,7 @@ In Cursor Chat or Composer, reference individual skill prompts with `@`:
 ```
 
 ### Document Templates
-Use the templates from `../../templates/`:
+Use the templates from `../../docs/`:
 - Copy `RESEARCH.md`, `CONTEXT.md`, `PRODUCT.md`, `DESIGN.md` to `docs/`
 - Copy `TASK.md` and `HANDOFF.md` to project root
 

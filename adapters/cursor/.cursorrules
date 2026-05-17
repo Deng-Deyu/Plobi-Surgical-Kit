@@ -70,15 +70,16 @@ You have access to these capabilities. Reference the corresponding prompt file w
 | "architecture scan" | fuse | @.plobi-prompts/fuse.md |
 | "map codebase" / "zoom out" | map | @.plobi-prompts/map.md |
 | "handoff" / "package" | package | @.plobi-prompts/package.md |
+| "tidy up" / "clean up structure" | tidy | @.plobi-prompts/tidy.md |
 | "scaffold" / "setup project" | scaffold | @.plobi-prompts/scaffold.md |
 | "new skill" / "forge" | forge | @.plobi-prompts/forge.md |
 
 ## Document Templates Location
 
 If templates don't exist in project, reference from this repo:
-- `../../templates/RESEARCH.md`
-- `../../templates/CONTEXT.md`
-- `../../templates/PRODUCT.md`
-- `../../templates/DESIGN.md`
-- `../../templates/TASK.md`
-- `../../templates/HANDOFF.md`
+- `../../docs/RESEARCH.md`
+- `../../docs/CONTEXT.md`
+- `../../docs/PRODUCT.md`
+- `../../docs/DESIGN.md`
+- `../../docs/TASK.md`
+- `../../docs/HANDOFF.md`

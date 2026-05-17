@@ -19,7 +19,7 @@ If a question can be answered by exploring the codebase, explore the codebase in
 
 1. **Disambiguate** — Turn fuzzy words into precise definitions ("nice" = what? "smooth" = what standard?)
 2. **Stress-test** — Play devil's advocate, find holes ("What if user uploads file >100MB?")
-3. **Write decisions** — Aligned definitions and decisions go to `docs/CONTEXT.md` and `docs/adr/`
+3. **Write decisions** — Aligned definitions and decisions go to `docs/CONTEXT.md` and `decisions/adr/`
 
 ## Freeze Line
 

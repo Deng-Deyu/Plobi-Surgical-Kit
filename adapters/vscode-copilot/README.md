@@ -30,7 +30,7 @@ Read .plobi-prompts/grill.md and start grilling this design.
 ```
 
 ### Document Templates
-Use templates from `../../templates/`.
+Use templates from `../../docs/`.
 
 ## Limitations
 

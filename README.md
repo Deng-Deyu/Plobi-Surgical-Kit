@@ -56,6 +56,7 @@ plobi/
 ├── prompts/                       # Tool-agnostic skill prompts
 │   ├── compress.md
 │   ├── explore.md
+│   ├── recon.md
 │   ├── grill.md
 │   ├── design.md
 │   ├── synthesize.md
@@ -65,16 +66,17 @@ plobi/
 │   ├── fuse.md
 │   ├── map.md
 │   ├── package.md
+│   ├── tidy.md
 │   ├── scaffold.md
 │   └── forge.md
 ├── docs/                          # Document templates
 │   ├── RESEARCH.md
 │   ├── CONTEXT.md
 │   ├── PRODUCT.md
-│   ├── DESIGN.md
-│   ├── TASK.md
-│   └── HANDOFF.md
+│   └── DESIGN.md
 ├── decisions/                     # Decision records (adopted + vetoed)
+├── TASK.md                        # Real-time task tracking (root for quick access)
+├── HANDOFF.md                     # Cross-session handoff (root for quick access)
 │   ├── adr/                       # Architecture Decision Records
 │   └── veto/                      # Rejected decisions
 ├── adapters/                      # Tool-specific implementations
@@ -86,7 +88,7 @@ plobi/
 └── examples/                      # Example project setups
 ```
 
-## 15 Skills
+## 17 Skills
 
 | Skill | Phase | Purpose |
 |-------|-------|---------|
@@ -104,6 +106,7 @@ plobi/
 | **fuse** | 3, 8 | Architecture improvement scans |
 | **map** | 6, Any | Codebase module mapping |
 | **package** | 7, Any | Cross-session handoff |
+| **tidy** | Any | Enforce structure hygiene and naming conventions |
 | **forge** | Meta | Create new skills |
 
 ## Key Concepts

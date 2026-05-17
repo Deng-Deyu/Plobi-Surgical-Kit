@@ -8,11 +8,12 @@
 | `docs/CONTEXT.md` | Aligned definitions, glossary, product boundaries | AI (grill) | Phase 1 |
 | `docs/PRODUCT.md` | Final PRD: feature list, acceptance criteria, priorities | AI (synthesize) | Phase 2 |
 | `docs/DESIGN.md` | UI visual style, interaction spec, component conventions | AI (design) | Phase 2 |
-| `docs/adr/ADR-XXX.md` | Every major decision: what, why, what was rejected | AI (grill) | Phase 1-6 |
+| `decisions/adr/ADR-XXX.md` | Every major decision: what, why, what was rejected | AI (grill) | Phase 1-6 |
+| `decisions/veto/*.md` | Permanently rejected decisions | AI (grill) | Phase 1-6 |
 | `TASK.md` | Real-time task tracking: status per slice | AI (auto-update) | Phase 3 |
 | `HANDOFF.md` | Cross-tool / cross-session handoff document | AI (package) | Every switch |
 
-**Naming rule: ALL_CAPS, underscores, in `docs/` (except `TASK.md` and `HANDOFF.md` at root for quick access).**
+**Naming rule:** ALL_CAPS, underscores, in `docs/` (except `TASK.md` and `HANDOFF.md` at root for quick access). Decisions live in `decisions/adr/` and `decisions/veto/`.
 
 ---
 
@@ -34,9 +35,10 @@
 | **fuse** | Architecture scan: find rot, propose fixes | "Architecture scan" |
 | **dissect** | Bug diagnosis 6 phases: systematic root cause | "Diagnose this" |
 | **package** | Generate `HANDOFF.md` for tool/session switching | "Package for handoff" |
+| **tidy** | Enforce structure hygiene and naming conventions | "Tidy up" / "Clean up structure" |
 | **forge** | Create a new Plobi skill | "Forge a new skill" |
 
-**15 skills total.**
+**17 skills total.**
 
 ---
 
@@ -70,8 +72,10 @@ your-project/
 │   ├── RESEARCH.md
 │   ├── CONTEXT.md
 │   ├── PRODUCT.md
-│   ├── DESIGN.md
-│   └── adr/
+│   └── DESIGN.md
+├── decisions/
+│   ├── adr/
+│   └── veto/
 ├── TASK.md
 └── HANDOFF.md
 ```
@@ -129,7 +133,7 @@ After explore or recon, execute grill. **This is the step from "idea" to "contra
 **Grill does:**
 1. Disambiguate every fuzzy term ("nice" = what? "smooth" = what standard?)
 2. Stress-test your plan — AI plays devil's advocate ("What if user uploads >100MB file?")
-3. Write aligned definitions and decisions to `docs/CONTEXT.md` and `docs/adr/`
+3. Write aligned definitions and decisions to `docs/CONTEXT.md` and `decisions/adr/`
 
 **"Stress test" feeling:** AI asks "what if" questions to surface edge cases you haven't thought of. Not hostile, just thorough.
 

@@ -46,8 +46,8 @@ Stop immediately if:
 ## Skill Prompts
 
 Reference `@.plobi-prompts/[skill].md` when triggered:
-- compress, explore, grill, design, synthesize, slice, freeze, dissect, fuse, map, package, scaffold, forge
+- compress, explore, recon, grill, design, synthesize, slice, freeze, dissect, fuse, map, package, tidy, scaffold, forge
 
 ## Document Templates
 
-Reference from `../../templates/`: RESEARCH.md, CONTEXT.md, PRODUCT.md, DESIGN.md, TASK.md, HANDOFF.md
+Reference from `../../docs/`: RESEARCH.md, CONTEXT.md, PRODUCT.md, DESIGN.md, TASK.md, HANDOFF.md

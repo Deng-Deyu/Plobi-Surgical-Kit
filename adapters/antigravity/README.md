@@ -16,8 +16,8 @@ If Antigravity supports custom system prompts, paste the contents of `../cursor/
 Store Plobi prompts in your workspace and reference them:
 
 ```
-[Reference: plobi-principles.md]
-[Reference: plobi-freeze.md]
+[Reference: core/principles.md]
+[Reference: prompts/freeze.md]
 
 Implement slice #2 with TDD.
 ```
@@ -37,7 +37,7 @@ Current phase: [X]. Next task: [Y].
 
 ## Document Templates
 
-Use templates from `../../templates/`.
+Use templates from `../../docs/`.
 
 ## Limitations
 

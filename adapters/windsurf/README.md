@@ -20,7 +20,7 @@ In Cascade Chat, reference individual skill prompts with `@`:
 ```
 
 ### Document Templates
-Use templates from `../../templates/`:
+Use templates from `../../docs/`:
 - `RESEARCH.md`, `CONTEXT.md`, `PRODUCT.md`, `DESIGN.md` → `docs/`
 - `TASK.md`, `HANDOFF.md` → project root
 

@@ -16,7 +16,7 @@
 - `git remote -v` — GitHub? GitLab? Self-hosted?
 - Check existing `AGENTS.md` / `CLAUDE.md` / `PLOBI.md`
 - Check `CONTEXT.md`, `CONTEXT-MAP.md`
-- Check `docs/adr/`, `docs/agents/`
+- Check `decisions/adr/`, `docs/agents/`
 - Check `.scratch/` — local markdown tracker convention?
 
 ### 2. Present and Ask
@@ -46,7 +46,7 @@ Default: each role string equals name. Ask if override needed.
 
 **Section C — Domain docs.**
 
-- **Single-context** — one `CONTEXT.md` + `docs/adr/` at root
+- **Single-context** — one `CONTEXT.md` + `decisions/adr/` at root
 - **Multi-context** — `CONTEXT-MAP.md` at root pointing to per-context files (monorepo)
 
 ### 3. Confirm and Edit
